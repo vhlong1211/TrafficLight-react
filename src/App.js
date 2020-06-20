@@ -2,14 +2,18 @@ import React from 'react';
 import './App.css';
 import TrafficLight from './components/TrafficLight.js';
 
-function App() {
-  return (
-    <div>
-      <TrafficLight />
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <TrafficLight />
+  
+      </div>
+     
+    );
 
-    </div>
-   
-  );
+  }
+  
 }
 
 export default App;

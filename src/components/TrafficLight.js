@@ -2,7 +2,7 @@ import React from 'react';
 import './Trafficlight.css';
 import classNames from 'classnames';
 
-class TrafficLight extends React.Component(){
+class TrafficLight extends React.Component{
     constructor(){
         super();
         this.state={

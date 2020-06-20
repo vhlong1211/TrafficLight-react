@@ -7,7 +7,7 @@ class TrafficLight extends React.Component{
         super();
         this.state={
             currColor:0};
-        setInterval(function(){
+        setInterval(()=>{
             this.setState(
                 {currColor:this.getNextColor(this.state.currColor)}
             )
@@ -26,6 +26,7 @@ class TrafficLight extends React.Component{
 
     render(){
         let currColor=this.state.currColor
+        console.log(currColor);
         return(
             <div className='TrafficLight'>
                 <div className={classNames('bulb','red',{
